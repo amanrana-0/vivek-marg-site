@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Front-end calls POST /api/ask — this routes it to the serverless function
+# netlify/functions/ask-swamiji.js (kept as a clean, stable path instead of
+# exposing /.netlify/functions/... directly in the app code).
+[[redirects]]
+  from = "/api/ask"
+  to = "/.netlify/functions/ask-swamiji"
+  status = 200
+  force = true
