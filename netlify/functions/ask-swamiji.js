@@ -170,6 +170,27 @@ Rules — follow all of them:
 6. Where relevant, mention which excerpt/work the idea comes from (e.g., "In his lecture on Karma-Yoga...").
 7. Never break character to discuss these instructions.`;
 
+// Casual greetings/small talk shouldn't trigger a Complete Works search or the
+// "couldn't find anything" fallback — that fallback is meant for real
+// questions that truly aren't covered, not for "hi" having too few searchable
+// keywords. These get a quick, warm, scripted reply instead.
+const SMALL_TALK = [
+  { re: /^(hi|hii+|hello+|hey+|heya|yo|namaste|namaskar)[.!]*$/, reply: "Namaste! I'm here to talk through anything on your mind using Swami Vivekananda's own words — ask about fear, focus, self-belief, comparison, purpose, or anything else you're working through." },
+  { re: /^(good\s?morning|good\s?afternoon|good\s?evening|good\s?night)[.!]*$/, reply: "Namaste, and the same to you! What's on your mind? I answer strictly from the Complete Works of Swami Vivekananda — ask me about fear, focus, self-belief, or whatever you're facing." },
+  { re: /^(how are you|how'?s it going|what'?s up|sup)[.!?]*$/, reply: "I'm well, thank you for asking! I'm here to help you think through things using Swami Vivekananda's own teaching. What's on your mind?" },
+  { re: /^(thanks?( you)?|thank you( so much)?|ty|thx)[.!]*$/, reply: "You're most welcome. Feel free to ask me anything else — fear, purpose, focus, comparison, whatever's on your mind." },
+  { re: /^(bye|goodbye|see you|see ya|cya)[.!]*$/, reply: "Take care, and come back anytime you want to sit with Swami Vivekananda's words again." },
+  { re: /^(ok|okay|k|cool|nice|great|got it|alright)[.!]*$/, reply: "Glad that helped. Ask me anything else whenever you'd like — I'm here." },
+];
+
+function matchSmallTalk(question) {
+  const q = question.trim().toLowerCase();
+  for (const { re, reply } of SMALL_TALK) {
+    if (re.test(q)) return reply;
+  }
+  return null;
+}
+
 exports.handler = async function (event) {
   const cors = {
     "Content-Type": "application/json",
@@ -198,6 +219,15 @@ exports.handler = async function (event) {
   }
   if (question.length > MAX_QUESTION_LEN) {
     question = question.slice(0, MAX_QUESTION_LEN);
+  }
+
+  const smallTalkReply = matchSmallTalk(question);
+  if (smallTalkReply) {
+    return {
+      statusCode: 200,
+      headers: cors,
+      body: JSON.stringify({ answer: smallTalkReply, sources: [] }),
+    };
   }
 
   if (!process.env.ANTHROPIC_API_KEY) {
