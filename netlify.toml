@@ -10,3 +10,30 @@
   to = "/.netlify/functions/ask-swamiji"
   status = 200
   force = true
+
+# Visitor accounts: sign up, log in, fetch current user, save progress.
+# These talk to a NEW, separate database table (vivekmarg_users) — see
+# schema_vivekmarg_users.sql — not the internal staff/RP users table.
+[[redirects]]
+  from = "/api/signup"
+  to = "/.netlify/functions/vm-signup"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/login"
+  to = "/.netlify/functions/vm-login"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/me"
+  to = "/.netlify/functions/vm-me"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/progress"
+  to = "/.netlify/functions/vm-progress"
+  status = 200
+  force = true

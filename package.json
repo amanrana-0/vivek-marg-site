@@ -1,0 +1,10 @@
+{
+  "name": "vivekmarg-site",
+  "private": true,
+  "description": "Dependencies for Vivek Marg's Netlify serverless functions (Ask Swamiji + visitor login/progress).",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5"
+  }
+}
