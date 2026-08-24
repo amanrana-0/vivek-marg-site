@@ -37,3 +37,17 @@
   to = "/.netlify/functions/vm-progress"
   status = 200
   force = true
+
+# 21-Day Challenge: real content (day titles/prompts) + per-user
+# reflections, stored in proper database tables instead of a JSON blob.
+[[redirects]]
+  from = "/api/challenge-days"
+  to = "/.netlify/functions/vm-challenge-days"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/reflections"
+  to = "/.netlify/functions/vm-reflections"
+  status = 200
+  force = true
