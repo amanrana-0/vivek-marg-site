@@ -51,3 +51,18 @@
   to = "/.netlify/functions/vm-reflections"
   status = 200
   force = true
+
+# Vivek Marg course: public course map + gated session content, and
+# per-user progress (pre-read/activity/quiz/reflection per session).
+[[redirects]]
+  from = "/api/course"
+  to = "/.netlify/functions/vm-course"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/course-progress"
+  to = "/.netlify/functions/vm-course-progress"
+  status = 200
+  force = true
+
