@@ -14,6 +14,7 @@ const ALLOWED_FIELDS = [
   "case_study_done",
   "quiz_score",
   "quiz_total",
+  "quiz_answers",
   "reflection_text",
 ];
 
@@ -32,7 +33,7 @@ exports.handler = async function (event) {
   if (event.httpMethod === "GET") {
     try {
       const result = await pool.query(
-        `select session_number, pre_read_done, activity_done, case_study_done, quiz_score,
+        `select session_number, pre_read_done, activity_done, case_study_done, quiz_score, quiz_answers,
                 quiz_total, reflection_text, completed_at, updated_at
          from public.user_course_progress
          where user_id = $1`,
@@ -60,8 +61,13 @@ exports.handler = async function (event) {
     const values = [decoded.sub, sessionNumber];
     for (const field of ALLOWED_FIELDS) {
       if (Object.prototype.hasOwnProperty.call(patch, field)) {
-        values.push(patch[field]);
-        setClauses.push(`${field} = $${values.length}`);
+        if (field === "quiz_answers") {
+          values.push(JSON.stringify(patch[field]));
+          setClauses.push(`${field} = $${values.length}::jsonb`);
+        } else {
+          values.push(patch[field]);
+          setClauses.push(`${field} = $${values.length}`);
+        }
       }
     }
     if (setClauses.length === 0) return json(400, { error: "No recognised fields in patch." });
@@ -90,7 +96,7 @@ exports.handler = async function (event) {
                else completed_at
              end
          where user_id = $1 and session_number = $2
-         returning session_number, pre_read_done, activity_done, case_study_done, quiz_score,
+         returning session_number, pre_read_done, activity_done, case_study_done, quiz_score, quiz_answers,
                    quiz_total, reflection_text, completed_at, updated_at`,
         [decoded.sub, sessionNumber]
       );
