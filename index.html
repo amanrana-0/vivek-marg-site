@@ -615,6 +615,7 @@ button{font-family:inherit;cursor:pointer}
 .closing-divider{display:flex;align-items:center;justify-content:center;gap:10px;margin:22px 0 14px}
 .closing-divider::before,.closing-divider::after{content:"";height:1px;width:40px;background:var(--line)}
 .closing-divider-dot{width:6px;height:6px;border-radius:50%;background:var(--saffron)}
+.course-story-image{width:100%;border-radius:16px;margin-bottom:16px;display:block;box-shadow:0 8px 24px -10px rgba(36,59,87,0.3)}
 .section-divider{display:flex;align-items:center;justify-content:center;gap:10px;margin:20px 0}
 .section-divider-line{height:1px;width:60px;background:#D4A24C}
 .section-divider-diamond{width:6px;height:6px;transform:rotate(45deg);background:#D4A24C}
@@ -1283,6 +1284,7 @@ function PageCourse({go:e}){
     if(step===0){
       stepBody=React.createElement(React.Fragment,null,
         React.createElement("h3",{className:"display",style:{fontSize:19,marginBottom:14}},(c.pre_read.title?c.pre_read.title:"Pre-read")),
+        c.pre_read.image&&React.createElement("img",{className:"course-story-image",src:c.pre_read.image,alt:c.pre_read.title||"Session illustration"}),
         c.pre_read.point&&React.createElement("div",{style:{textAlign:"center",marginBottom:8}},
           React.createElement("span",{className:"chip"},"The point"),
           React.createElement("p",{className:"course-point-statement"},c.pre_read.point)),
