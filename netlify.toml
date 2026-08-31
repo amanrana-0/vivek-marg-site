@@ -66,3 +66,18 @@
   status = 200
   force = true
 
+
+
+# Forgot password: request an email OTP, then reset with that code.
+[[redirects]]
+  from = "/api/forgot-password"
+  to = "/.netlify/functions/vm-forgot-password"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/reset-password"
+  to = "/.netlify/functions/vm-reset-password"
+  status = 200
+  force = true
+
