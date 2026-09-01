@@ -18,7 +18,7 @@ exports.handler = async function (event) {
   try {
     const pool = getPool();
     const result = await pool.query(
-      `select id, name, email, phone, college, year_of_study, motivation, consent, progress
+      `select id, name, email, phone, role, college, year_of_study, motivation, consent, progress
        from public.vivekmarg_users where id = $1`,
       [decoded.sub]
     );
