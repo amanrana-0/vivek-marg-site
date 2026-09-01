@@ -66,7 +66,12 @@
   status = 200
   force = true
 
-
+# Public blog feed shown on the Blogs & Posts page.
+[[redirects]]
+  from = "/api/posts"
+  to = "/.netlify/functions/vm-posts"
+  status = 200
+  force = true
 
 # Forgot password: request an email OTP, then reset with that code.
 [[redirects]]
@@ -80,4 +85,3 @@
   to = "/.netlify/functions/vm-reset-password"
   status = 200
   force = true
-
