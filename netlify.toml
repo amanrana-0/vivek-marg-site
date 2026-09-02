@@ -2,6 +2,12 @@
   publish = "."
   functions = "netlify/functions"
 
+# Ask Swamiji loads its ~8MB Complete Works index at runtime via
+# fs.readFileSync (not require()), so Netlify's bundler won't pick it
+# up automatically -- this tells it to package the file anyway.
+[functions."ask-swamiji"]
+  included_files = ["netlify/functions/data/cw_chunks.json"]
+
 # Front-end calls POST /api/ask — this routes it to the serverless function
 # netlify/functions/ask-swamiji.js (kept as a clean, stable path instead of
 # exposing /.netlify/functions/... directly in the app code).
@@ -72,6 +78,16 @@
   to = "/.netlify/functions/vm-posts"
   status = 200
   force = true
+
+# Standalone admin tool for managing posts without pgAdmin. Password
+# protected via ADMIN_PASSWORD env var, not linked from the main nav.
+[[redirects]]
+  from = "/api/posts-admin"
+  to = "/.netlify/functions/vm-posts-admin"
+  status = 200
+  force = true
+
+
 
 # Forgot password: request an email OTP, then reset with that code.
 [[redirects]]
