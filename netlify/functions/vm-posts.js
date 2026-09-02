@@ -12,7 +12,7 @@ exports.handler = async function (event) {
   try {
     const pool = getPool();
     const { rows } = await pool.query(
-      `select id, author_name, author_avatar_url, content, image_url, created_at
+      `select id, author_name, author_avatar_url, content, image_url, is_story, created_at
        from public.vivekmarg_posts
        where is_published = true
        order by display_order asc nulls last, created_at desc
