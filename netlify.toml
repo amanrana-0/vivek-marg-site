@@ -101,3 +101,10 @@
   to = "/.netlify/functions/vm-reset-password"
   status = 200
   force = true
+
+# Sign in / sign up with Google ("Continue with Google" button).
+[[redirects]]
+  from = "/api/google-auth"
+  to = "/.netlify/functions/vm-google-auth"
+  status = 200
+  force = true

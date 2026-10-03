@@ -45,4 +45,22 @@ function requireAuth(event) {
   return decoded;
 }
 
-module.exports = { CORS, json, signToken, requireAuth };
+// Short-lived token for a Google sign-up that still needs the
+// registration details (phone, role, college...). It proves which Google
+// account the person signed in with, so the final step can't be used to
+// claim someone else's email. Valid for 30 minutes.
+function signGooglePending(g) {
+  return jwt.sign(
+    { sub: g.sub, email: g.email, name: g.name, kind: "google_pending" },
+    getSecret(),
+    { expiresIn: "30m" }
+  );
+}
+
+function verifyGooglePending(token) {
+  const decoded = jwt.verify(String(token || ""), getSecret());
+  if (decoded.kind !== "google_pending") throw new Error("Wrong token type");
+  return decoded;
+}
+
+module.exports = { CORS, json, signToken, requireAuth, signGooglePending, verifyGooglePending };

@@ -35,6 +35,12 @@ exports.handler = async function (event) {
     if (result.rows.length === 0) return invalid();
 
     const row = result.rows[0];
+    // Accounts created with "Continue with Google" have no password.
+    if (!row.password_hash) {
+      return json(401, {
+        error: "This account uses Google sign-in. Click \"Continue with Google\" above, or use \"Forgot password?\" to set a password.",
+      });
+    }
     const ok = await bcrypt.compare(password, row.password_hash);
     if (!ok) return invalid();
 
