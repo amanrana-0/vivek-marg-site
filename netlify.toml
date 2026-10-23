@@ -108,3 +108,11 @@
   to = "/.netlify/functions/vm-google-auth"
   status = 200
   force = true
+
+# Certificates: signed-in visitors whose email is listed in
+# vivekmarg_certificates get a "Download certificate" banner.
+[[redirects]]
+  from = "/api/certificates"
+  to = "/.netlify/functions/vm-certificates"
+  status = 200
+  force = true
