@@ -2273,7 +2273,6 @@ function drawVmCertificate(cert){
   doc.setFont("times","bold");doc.setFontSize(23);doc.setTextColor(...TEAL);
   doc.text("RAMAKRISHNA MISSION, GURUGRAM",W/2,64,{align:"center"});
   doc.setTextColor(...BLUE);doc.text("VIVEKANANDA INSTITUTE OF VALUES",W/2,90,{align:"center"});
-  doc.setDrawColor(...DARKGRAY);doc.setLineWidth(0.6);doc.line(140,106,W-140,106);
   doc.setFont("helvetica","normal");doc.setFontSize(12);doc.setTextColor(...DARKGRAY);
   doc.text("Park Hospital Road, Opp. Sispal Vihar, Sector-47, Gurugram - 122018 (Haryana)",W/2,120,{align:"center"});
   doc.setFont("helvetica","italic");doc.setFontSize(10);doc.setTextColor(...GRAY);
@@ -2285,15 +2284,18 @@ function drawVmCertificate(cert){
   const name=String(cert.recipient_name||"Participant").trim();
   let nameSize=36;doc.setFont("times","bold");doc.setFontSize(nameSize);
   while(nameSize>20&&doc.getTextWidth(name)>W-220){nameSize-=2;doc.setFontSize(nameSize)}
-  doc.setTextColor(...MAROON);doc.text(name,W/2,252,{align:"center"});
+  doc.setTextColor(...MAROON);doc.text(name,W/2,256,{align:"center"});
   doc.setFont("times","normal");doc.setFontSize(15);doc.setTextColor(...DARKGRAY);
   const lines=doc.splitTextToSize(String(cert.description||""),W-220).slice(0,5);
-  lines.forEach((ln,i)=>doc.text(ln,W/2,286+i*19,{align:"center"}));
-  if(lines.length<=4){
+  const lineH=21,showQuote=lines.length<=4,blockH=(lines.length-1)*lineH+(showQuote?60:0);
+  const extra=Math.max(0,440-298-blockH),y0=304+Math.min(extra,40)*0.2;
+  lines.forEach((ln,i)=>doc.text(ln,W/2,y0+i*lineH,{align:"center"}));
+  if(showQuote){
+    const qy=y0+(lines.length-1)*lineH+40+Math.min(extra,60)*0.3;
     doc.setFont("times","bolditalic");doc.setFontSize(16);doc.setTextColor(...NAVY);
-    doc.text("\u201cThey alone live who live for others.\u201d",W/2,373,{align:"center"});
+    doc.text("\u201cThey alone live who live for others.\u201d",W/2,qy,{align:"center"});
     doc.setFont("times","bold");doc.setFontSize(12.5);doc.setTextColor(...GRAY);
-    doc.text("\u2014 Swami Vivekananda",W/2,393,{align:"center"});
+    doc.text("\u2014 Swami Vivekananda",W/2,qy+20,{align:"center"});
   }
   let issued=new Date();
   if(cert.issue_date){const p=String(cert.issue_date).split("-");issued=new Date(+p[0],+p[1]-1,+p[2])}
@@ -2304,7 +2306,11 @@ function drawVmCertificate(cert){
   try{doc.addImage(IMG_SIGN_SWAMI,"PNG",W-180-75,H-128,150,150*56/471)}catch(e){}
   doc.setFont("helvetica","normal");doc.setFontSize(11);doc.text("Secretary",W-180,H-76,{align:"center"});
   doc.setFont("helvetica","normal");doc.setFontSize(9);doc.setTextColor(...GRAY);
-  doc.text("vivekmarg.org  \u00b7  vivekmarg@rkmviva.org      |      Certificate No. VM-"+String(cert.id).padStart(5,"0"),W/2,H-48,{align:"center"});
+  const site="vivekmarg.org",mail="vivekmarg@rkmviva.org",footer=site+"  \u00b7  "+mail+"      |      Certificate No. VM-"+String(cert.id).padStart(5,"0");
+  doc.text(footer,W/2,H-48,{align:"center"});
+  const fx=W/2-doc.getTextWidth(footer)/2,mx=fx+doc.getTextWidth(site+"  \u00b7  ");
+  doc.link(fx,H-45,doc.getTextWidth(site),-12,{url:"https://vivekmarg.org"});
+  doc.link(mx,H-45,doc.getTextWidth(mail),-12,{url:"mailto:vivekmarg@rkmviva.org"});
   const fileTitle=String(cert.certificate_title||"Certificate").replace(/[^A-Za-z0-9]+/g,"-").replace(/^-|-$/g,"");
   doc.save(fileTitle+"-"+name.replace(/[^A-Za-z0-9]+/g,"_")+".pdf");
 }
