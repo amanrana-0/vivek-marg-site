@@ -1,0 +1,765 @@
+{
+ "book": {
+  "title": "Swami Vivekananda Tells Stories",
+  "compiler": "Swami Atmashraddhananda",
+  "publisher": "Advaita Ashrama"
+ },
+ "themes": [
+  "Science and Religion",
+  "Vasanas or Habits",
+  "Attachment or Non-attachment",
+  "Myriad Forms of Love",
+  "Happiness",
+  "Maya",
+  "Mind and Concentration",
+  "Faith and Sacrifice",
+  "Women of India",
+  "Attitude",
+  "Self-Realization",
+  "Miscellaneous"
+ ],
+ "stories": [
+  {
+   "n": 1,
+   "title": "Human Understanding",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "Two chess players laughed at the moon pulling the tides, then happily believed in a sponge mountain."
+  },
+  {
+   "n": 2,
+   "title": "Two Approaches",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "An agnostic wanted the orange; Swamiji wanted the mango. Both were after the juice of life."
+  },
+  {
+   "n": 3,
+   "title": "Not a drop of Water",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "A holy man handed Swamiji a rain forecast and told him to squeeze it. Nothing came out."
+  },
+  {
+   "n": 4,
+   "title": "Where were these rishis?",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "A London friend asked why India's sages never came to teach England. Swamiji's reply was sharp."
+  },
+  {
+   "n": 5,
+   "title": "Story of the Deluge",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "A tiny fish begged the sage Manu for shelter, and kept growing until it filled the ocean."
+  },
+  {
+   "n": 6,
+   "title": "Until You Know God",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "Socrates said the greatest study is man. A visiting Brahmin asked him one sharp question back."
+  },
+  {
+   "n": 7,
+   "title": "Freedom—the Only Condition of Growth",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "Buddha denounced the gods for eighty years and died peacefully. What does that say about India?"
+  },
+  {
+   "n": 8,
+   "title": "‘I Want Religion’",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "A young man kept saying he wanted religion. His teacher showed him what wanting really feels like."
+  },
+  {
+   "n": 9,
+   "title": "The Salt Doll",
+   "theme": "Science and Religion",
+   "ready": true,
+   "excerpt": "A doll made of salt set out to measure the ocean's depth. It never came back."
+  },
+  {
+   "n": 10,
+   "title": "The Bugle Sound",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "A proud stag boasted of his mighty horns, until he heard the hunter's bugle."
+  },
+  {
+   "n": 11,
+   "title": "‘Thou art That’",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "A queen sang one line to her babies every night. It shaped all four of their lives."
+  },
+  {
+   "n": 12,
+   "title": "Bondage of Nature",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "A Frenchman proudly served his guest a glowing glass of fine old wine. It was castor oil."
+  },
+  {
+   "n": 13,
+   "title": "The Old Chinaman",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "After sixty years in a dungeon, an old prisoner was set free, and begged to go back."
+  },
+  {
+   "n": 14,
+   "title": "The Story of Vilvamangala",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "He crossed a raging river on a corpse and climbed a cobra for love, then found a greater love."
+  },
+  {
+   "n": 15,
+   "title": "Lingering Hope",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "A king was asked: what is the most wonderful thing in the world? The answer was one word."
+  },
+  {
+   "n": 16,
+   "title": "Lion and Sheep",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "A lion cub raised by sheep grew up bleating and eating grass, until it saw its reflection."
+  },
+  {
+   "n": 17,
+   "title": "Fisherwomen in a Florist’s House",
+   "theme": "Vasanas or Habits",
+   "ready": true,
+   "excerpt": "Stranded in a house full of flowers, some fisherwomen couldn't sleep until they smelled their fish baskets."
+  },
+  {
+   "n": 18,
+   "title": "Non-attachment",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "A polite mosquito apologised to a bull for sitting on its horn. The bull just laughed."
+  },
+  {
+   "n": 19,
+   "title": "True Contentment",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "On a stormy night, a comfortable cowherd sang to the rain. The Buddha, outside, sang back."
+  },
+  {
+   "n": 20,
+   "title": "From Gross to Subtle",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "Locked in a tower to die, a minister escaped using a beetle, some honey and a thread."
+  },
+  {
+   "n": 21,
+   "title": "Neither Good Nor Evil",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "Looking at the moon, a clergyman saw church spires. A young lady saw something else entirely."
+  },
+  {
+   "n": 22,
+   "title": "Story of a Young sannyasin",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "A yogi could burn birds with a glance. A housewife and a butcher taught him what real power is."
+  },
+  {
+   "n": 23,
+   "title": "‘Getting Nearer to the Lord’",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "Why bless the people who insult you? Swamiji's surprising answer involves a mother monkey."
+  },
+  {
+   "n": 24,
+   "title": "The Story of Jada Bharata",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "A king who gave up a whole empire got hooked on a pet deer, and it cost him lifetimes."
+  },
+  {
+   "n": 25,
+   "title": "Why We Disagree",
+   "theme": "Attachment or Non-attachment",
+   "ready": true,
+   "excerpt": "A frog who had never left his well was sure nothing could be bigger than it."
+  },
+  {
+   "n": 26,
+   "title": "Love for God",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "His wife asked what God had ever given him. His answer: Do I love a mountain for profit?"
+  },
+  {
+   "n": 27,
+   "title": "‘It is also Yours’",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "A thief stole a saint's cooking pot. The saint chased him down to give him the other one."
+  },
+  {
+   "n": 28,
+   "title": "Four Travellers",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "Three travellers leapt over a high wall laughing. Only the fourth came back to tell."
+  },
+  {
+   "n": 29,
+   "title": "‘I cannot Trade in Love’",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "Exiled to the forest, Yudhishthira was asked why the good suffer. His answer was a mountain range."
+  },
+  {
+   "n": 30,
+   "title": "Be Pure and Love Everyone",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "Five young men argued over the one true path to God. Buddha asked: has anyone seen Him?"
+  },
+  {
+   "n": 31,
+   "title": "The Highest Love",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "A lover knocked and was turned away three times. The fourth time, his answer opened the door."
+  },
+  {
+   "n": 32,
+   "title": "Nishtha or Devotion to One Ideal",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "Hanuman knew Krishna and Rama were the same God. He still wanted only Rama."
+  },
+  {
+   "n": 33,
+   "title": "The Way of One-pointed Devotion",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "Some people chase one exciting idea after another. The pearl-oyster catches a single raindrop and goes deep."
+  },
+  {
+   "n": 34,
+   "title": "Courage To Be",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "An emperor threatened to kill an old sage. The sage just smiled."
+  },
+  {
+   "n": 35,
+   "title": "Truth Will Be Out, Sooner Or Later",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "Every courtier poured water instead of milk, sure that nobody would notice. By morning, everyone did."
+  },
+  {
+   "n": 36,
+   "title": "Guru Nanak’s Insight",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "The mullah's lips said 'Allah, Allah'. Guru Nanak smiled, because he knew where the mullah's mind was."
+  },
+  {
+   "n": 37,
+   "title": "Great Indian Women",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "A Brahmin girl who led armies, and a queen in full armour who drove back an empire."
+  },
+  {
+   "n": 38,
+   "title": "Arise, Awake!",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "Six months in a new land turned a frightened immigrant into a man who walked tall. Why?"
+  },
+  {
+   "n": 39,
+   "title": "Thief and a Non-killer",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "A master who preached non-violence saved a thief from a beating, then ordered him drowned."
+  },
+  {
+   "n": 40,
+   "title": "Believe in Yourselves",
+   "theme": "Myriad Forms of Love",
+   "ready": true,
+   "excerpt": "A struggling clerk twice tried to end his life. Then he started believing in himself."
+  },
+  {
+   "n": 41,
+   "title": "Concept of Heaven",
+   "theme": "Happiness",
+   "ready": true,
+   "excerpt": "In the Norse heaven, warriors hunt the same boar every single day, forever. Sound like paradise?"
+  },
+  {
+   "n": 42,
+   "title": "Solon and Croesus",
+   "theme": "Happiness",
+   "ready": true,
+   "excerpt": "A rich king called himself the happiest man alive. A sage told him to wait."
+  },
+  {
+   "n": 43,
+   "title": "What Joy Really Is",
+   "theme": "Happiness",
+   "ready": true,
+   "excerpt": "A man still worth a million pounds took his life because he felt poor. What is joy, really?"
+  },
+  {
+   "n": 44,
+   "title": "And This Is Maya",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "Narada went to fetch water and lived twelve years in half an hour."
+  },
+  {
+   "n": 45,
+   "title": "Our Predicament",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "The Lord became a pig, loved the mud, and refused to come home."
+  },
+  {
+   "n": 46,
+   "title": "Resolving Our Conflicts",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "A fox spoiled a poor man's feast. The mullah's cure: let a dog spoil it too."
+  },
+  {
+   "n": 47,
+   "title": "Going Round and Round",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "A blindfolded bullock walks in circles all day, chasing straw it can never reach."
+  },
+  {
+   "n": 48,
+   "title": "The Mirage of the World",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "For a month Swamiji admired lakes in the desert. Then he tried to drink from one."
+  },
+  {
+   "n": 49,
+   "title": "Alice in Wonderland",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "Swamiji loved Alice in Wonderland, and saw the whole world in its delightful nonsense."
+  },
+  {
+   "n": 50,
+   "title": "Two Birds",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "Two golden birds on one tree: one calm at the top, one restlessly pecking fruit below."
+  },
+  {
+   "n": 51,
+   "title": "‘I am Discovered’",
+   "theme": "Maya",
+   "ready": true,
+   "excerpt": "A shoemaker was told to keep quiet so no one would guess his caste. It didn't go well."
+  },
+  {
+   "n": 52,
+   "title": "Intensity of Prayer",
+   "theme": "Mind and Concentration",
+   "ready": true,
+   "excerpt": "A man at prayer is stepped on by a girl in a hurry. Her reply silences him."
+  },
+  {
+   "n": 53,
+   "title": "All Power is within",
+   "theme": "Mind and Concentration",
+   "ready": true,
+   "excerpt": "A girl floats in mid-air, and a suspicious Governor swings his sword beneath her."
+  },
+  {
+   "n": 54,
+   "title": "The Tartar Inside",
+   "theme": "Mind and Concentration",
+   "ready": true,
+   "excerpt": "A soldier proudly captures an enemy, then can't bring him in, or get away himself."
+  },
+  {
+   "n": 55,
+   "title": "The Noseless Saint",
+   "theme": "Mind and Concentration",
+   "ready": true,
+   "excerpt": "Why wouldn't Pavhari Baba leave his cave to help the world? He answered with a wicked joke."
+  },
+  {
+   "n": 56,
+   "title": "All Powers are in the Mind",
+   "theme": "Mind and Concentration",
+   "ready": true,
+   "excerpt": "A man reads sealed questions, and another pulls baskets of grapes from under a blanket."
+  },
+  {
+   "n": 57,
+   "title": "Be Like a Pearl Oyster",
+   "theme": "Mind and Concentration",
+   "ready": true,
+   "excerpt": "Oysters rise to catch one special raindrop, then sink deep to turn it into a pearl."
+  },
+  {
+   "n": 58,
+   "title": "Pratika Or Symbolism",
+   "theme": "Faith and Sacrifice",
+   "ready": true,
+   "excerpt": "A learned yogi mocks a cowherd with a joke answer about God. The cowherd takes it seriously."
+  },
+  {
+   "n": 59,
+   "title": "A Case of Complete Self-sacrifice",
+   "theme": "Faith and Sacrifice",
+   "ready": true,
+   "excerpt": "A half-golden mongoose calls the grandest sacrifice ever held a fake. Here's why."
+  },
+  {
+   "n": 60,
+   "title": "The Bell-Eared Demon (Ghanta Karna)",
+   "theme": "Faith and Sacrifice",
+   "ready": true,
+   "excerpt": "A devotee hated another god's name so much he tied bells to his ears to drown it out."
+  },
+  {
+   "n": 61,
+   "title": "Each is Great in His Own Place",
+   "theme": "Faith and Sacrifice",
+   "ready": true,
+   "excerpt": "Who is greater, the monk or the householder? A king travels far to find out."
+  },
+  {
+   "n": 62,
+   "title": "Shraddha or Genuine Faith",
+   "theme": "Faith and Sacrifice",
+   "ready": true,
+   "excerpt": "In a Kashmir village, Swamiji asks two people their religion. Their answers reveal something deep."
+  },
+  {
+   "n": 63,
+   "title": "Sita-Rama, the Ideal Couple",
+   "theme": "Women of India",
+   "ready": true,
+   "excerpt": "A forest sage praises Sita for obeying her husband. Sita gently gives a deeper answer."
+  },
+  {
+   "n": 64,
+   "title": "A Heroic Act",
+   "theme": "Women of India",
+   "ready": true,
+   "excerpt": "Two tales from Rajput history: a daring elopement, and a queen who chose fire over capture."
+  },
+  {
+   "n": 65,
+   "title": "Raksha Bandhan",
+   "theme": "Women of India",
+   "ready": true,
+   "excerpt": "Threatened by an emperor's army, a Rajput girl fights back with silken threads."
+  },
+  {
+   "n": 66,
+   "title": "The Status of Women in the Vedas",
+   "theme": "Women of India",
+   "ready": true,
+   "excerpt": "At King Janaka's court, the sharpest questioner of the great sage was a young woman."
+  },
+  {
+   "n": 67,
+   "title": "Be Active First",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "A dull man asks Swamiji how to find God. The surprising advice: first learn to lie!"
+  },
+  {
+   "n": 68,
+   "title": "We, Not the World, Get Straightened Out",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "A man gets a ghost that grants every wish, but it eats him if it runs out of work."
+  },
+  {
+   "n": 69,
+   "title": "Narada and Two Aspirants",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "One seeker weeps at four more births. Another dances at countless more. Guess who gets freedom."
+  },
+  {
+   "n": 70,
+   "title": "Universal Brotherhood",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "Two brothers drinking in secret keep shouting 'Quiet!' at each other. Guess who wakes up."
+  },
+  {
+   "n": 71,
+   "title": "Sin of Killing Cow",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "A man kills a cow in anger, then tries to pin the blame on a god."
+  },
+  {
+   "n": 72,
+   "title": "So He Has Also Followed Suit",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "A young critic suddenly praises the Gita. Sri Ramakrishna knows exactly why."
+  },
+  {
+   "n": 73,
+   "title": "Who Serves the Lord the Best",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "One gardener flatters the master; the other quietly grows his fruit. Which one does the master love?"
+  },
+  {
+   "n": 74,
+   "title": "It is the Heart that Moves, Truly",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "Stranded Burmese travellers in London are rescued by one woman, and then a whole nation."
+  },
+  {
+   "n": 75,
+   "title": "Strength is the Test",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "An astrologer tells a king he has six months to live. One quick-witted minister calls his bluff."
+  },
+  {
+   "n": 76,
+   "title": "Do Something Religious",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "A ship is sinking and the crew begs the church elder to do something religious. He passes the hat."
+  },
+  {
+   "n": 77,
+   "title": "We are Lions, not Sheep",
+   "theme": "Attitude",
+   "ready": true,
+   "excerpt": "Raised among sheep, a young lion bleats and eats grass, until another lion shows him his reflection."
+  },
+  {
+   "n": 78,
+   "title": "Satyakama’s Story",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "A boy with no family name tells the plain truth, and the whole universe becomes his teacher."
+  },
+  {
+   "n": 79,
+   "title": "How Upakosala Got Knowledge",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Too sad to eat while his teacher is away, a student hears the sacred fire speak to him."
+  },
+  {
+   "n": 80,
+   "title": "‘You Have Known the Truth’",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Ignored for three days, then pampered for eight, young Shuka stays exactly the same. Then comes the milk test."
+  },
+  {
+   "n": 81,
+   "title": "Gods and Demons",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "A god and a demon hear the same teaching: you are the Self. Only one keeps asking questions."
+  },
+  {
+   "n": 82,
+   "title": "A Fable About Buddha",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "The gods pile a sacrificial fire on Buddha's chest to destroy him. They discover purity cannot be killed."
+  },
+  {
+   "n": 83,
+   "title": "Yajnavalkya and Maitreyi",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Offered all of her husband's wealth, Maitreyi asks one question: will this make me immortal?"
+  },
+  {
+   "n": 84,
+   "title": "The Story of Vedanta",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "From tribal gods to the God of the universe: Swamiji traces humanity's long search for something higher."
+  },
+  {
+   "n": 85,
+   "title": "The Story of Nachiketa",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Given to Death by an angry father, a boy turns down kingdoms and riches to ask one question."
+  },
+  {
+   "n": 86,
+   "title": "Nature is Like Ferris Wheel",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Swamiji looks at Chicago's giant Ferris Wheel and sees the whole journey of the soul."
+  },
+  {
+   "n": 87,
+   "title": "We Are Like Silkworms",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "We spin our own cocoons and get trapped inside. But the story doesn't end there."
+  },
+  {
+   "n": 88,
+   "title": "The Intense Desire To Be Free",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "A teacher holds his student underwater to show him what real longing for God feels like."
+  },
+  {
+   "n": 89,
+   "title": "‘Where Shall It Fall?’",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "An examiner asks why the earth doesn't fall. One little girl's reply stumps him completely."
+  },
+  {
+   "n": 90,
+   "title": "Eat the Mangoes",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Some visitors to a mango orchard count leaves and twigs. One sensible man just eats the fruit."
+  },
+  {
+   "n": 91,
+   "title": "The Passing Away of Buddha",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Offered a meal by a despised outcaste, the dying Buddha eats it gladly, and calls him a benefactor."
+  },
+  {
+   "n": 92,
+   "title": "Have You Seen God?",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "A son returns home listing all the sciences he has mastered. His father sends him straight back."
+  },
+  {
+   "n": 93,
+   "title": "‘Whosoever Will Save His Life’",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "A rich young man asks Jesus the way to eternal life, and walks away sad at the answer."
+  },
+  {
+   "n": 94,
+   "title": "Buddha’s Counsel",
+   "theme": "Self-Realization",
+   "ready": true,
+   "excerpt": "Five scholars argue over whose scripture shows the way to God. Buddha settles it with one question."
+  },
+  {
+   "n": 95,
+   "title": "The Transformation",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "A highway robber asks his family to share the weight of his sins. Their answer changes everything."
+  },
+  {
+   "n": 96,
+   "title": "The Story of Ramayana",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "A grieving dove, a sage's cry of pity, and the first poem ever sung: India's oldest epic."
+  },
+  {
+   "n": 97,
+   "title": "The Danger of Frauds",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "A rich man claimed God told him to take a painting. The owner had a divine message too."
+  },
+  {
+   "n": 98,
+   "title": "A Leader Leads by Example",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "Well-armed, trained soldiers lost the battle. A British general explained exactly why."
+  },
+  {
+   "n": 99,
+   "title": "Blind Men and Elephant",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "Five blind men touched one elephant and came away with five different animals, and a fight."
+  },
+  {
+   "n": 100,
+   "title": "‘This is Fanaticism’",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "A young woman in Chicago was sure she'd found the cure for every evil in the world."
+  },
+  {
+   "n": 101,
+   "title": "The Greatest Birth",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "Why would even the gods have to be born as humans? Swamiji explains the value of being human."
+  },
+  {
+   "n": 102,
+   "title": "Your Doctrine Of Heredity!",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "A boy who escaped horror in Africa gave a brilliant speech in America. So much for 'heredity'."
+  },
+  {
+   "n": 103,
+   "title": "The Story of Mahabharata",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "Cousins at war, a rigged dice game, a love stronger than death, and a king who wouldn't abandon his dog."
+  },
+  {
+   "n": 104,
+   "title": "Real Prayer is Unconditional",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "A king wanted to give a sage a gift. Then the sage heard the king pray."
+  },
+  {
+   "n": 105,
+   "title": "Judge Ye Not",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "The English hated French bull-fights; the French threw out English boxers. Swamiji saw a lesson."
+  },
+  {
+   "n": 106,
+   "title": "A Calcutta Youth in Father-in-law’s House",
+   "theme": "Miscellaneous",
+   "ready": true,
+   "excerpt": "A city boy drank a glass of milk before dinner. Then the drums started and the truth came out."
+  }
+ ]
+}
